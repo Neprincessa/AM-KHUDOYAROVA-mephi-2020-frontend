@@ -22,14 +22,7 @@ export default function App() {
 								<Grid item xs={6}>
 										<Card />
 								</Grid>
-								{/*<Grid item xs={12} md={2} xs={2}>*/}
-								{/*    <CheckboxListSecondary/>*/}
-								{/*</Grid>*/}
-
 						</Grid>
-
-
 				</React.Fragment>
-
 		);
 }

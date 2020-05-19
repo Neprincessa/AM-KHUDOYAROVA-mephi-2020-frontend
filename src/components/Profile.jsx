@@ -7,8 +7,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {CardMedia} from "@material-ui/core";
 import CardActionArea from '@material-ui/core/CardActionArea';
-import TextField from "@material-ui/core/TextField";
-
 
 const useStyles = makeStyles((theme) => ({
 		root: {
@@ -53,36 +51,15 @@ export default function SimpleCard() {
 								<CardMedia className={classes.media}/>
 								<CardContent>
 										<Typography variant="h5" component="h2" style={{justifyContent :"center"}}>
-												Welcome to our service!
+												Username: Anastasia
 										</Typography>
-										<Typography className={classes.pos} color="textSecondary">
-												Please login  or register
-										</Typography>
-										<Typography>
-												<TextField
-														fullWidth
-														required
-														inputRef={textInput}
-														name="firstName"
-														type="text"
-														placeholder="Enter Your Username"
-														label="Username"
-												/>
-												<TextField
-														fullWidth
-														required
-														inputRef={textInput}
-														name="firstName"
-														type="text"
-														placeholder="Enter Your Password"
-														label="Password"
-														style={{justifySelf:"center"}}
-												/>
+										<Typography variant="h5" component="h2" style={{justifyContent :"center"}}>
+												Email: nastya@nastya.com
 										</Typography>
 								</CardContent>
 						</CardActionArea>
 						<CardActions disableSpacing>
-										<Button size="small">Register</Button>
+								<Button size="small">Change password</Button>
 						</CardActions>
 				</Card>
 		);
