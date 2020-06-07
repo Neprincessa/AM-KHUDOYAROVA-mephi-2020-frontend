@@ -1,9 +1,9 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import UserCard from './UserCard';
-import PresentsList from './PresentsList';
-import { useParams } from 'react-router';
-import { loadPresents } from '../redux/actions/actions';
+import React from "react";
+import Grid from "@material-ui/core/Grid";
+import UserCard from "./UserCard";
+import PresentsList from "./PresentsList";
+import { useParams } from "react-router";
+import { loadPresents } from "../redux/actions/actions";
 
 function UserProfile() {
   const { username } = useParams();
@@ -14,16 +14,16 @@ function UserProfile() {
         container
         spacing={4}
         style={{
-          marginTop: '100px',
-          paddingLeft: '2vh',
-          paddingRight: '2vh',
+          marginTop: "100px",
+          paddingLeft: "2vw",
+          paddingRight: "2vw",
         }}
-        justify={'center'}
+        justify={"center"}
       >
-        <Grid item xs={'auto'} md={'auto'}>
+        <Grid item xs={"auto"} md={"auto"}>
           <UserCard username={username} />
         </Grid>
-        <Grid item xs={'auto'} md={'auto'}>
+        <Grid item xs={"auto"} md={"auto"}>
           <PresentsList username={username} />
         </Grid>
       </Grid>
